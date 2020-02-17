@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+
+  count:number = 0;
+  imageHide:boolean = true;
+
+  clickCount() {
+    this.count++;
+  } 
+
+  clickWord() {
+   //console.log("Image double clicked");
+
+   if (this.imageHide == true){
+     this.imageHide = false;
+   }
+   else {
+     this.imageHide = true;
+   }
+  }
 }
